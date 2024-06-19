@@ -70,18 +70,20 @@
         }
 
         .firstSection>div {
-            width: 30%;
+            width: 38%;
         }
 
 
         .leftSection {
             font-size: 2.5rem;
-            
+
 
         }
+
         .leftSection .buttons {
             padding: 20px 0;
         }
+
         .leftSection .btn {
             padding: 12px;
             background: rgb(68, 14, 131);
@@ -93,14 +95,12 @@
             justify-content: left;
 
         }
-        .leftSection .socials {
-           
 
-        }
+
         .leftSection .socials img {
             width: 73px;
             padding: 10px;
-            
+
         }
 
         .rightSection img {
@@ -127,7 +127,7 @@
         }
 
         .secondSection h1 {
-            font-size: 1.9rem;
+            font-size: 1.5rem;
         }
 
         .secondSection .box {
@@ -166,21 +166,64 @@
             width: 150px;
             font-size: 11px;
         }
-        footer{
-            background-color: rgb(9, 10, 77);
-            
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 47vh;
+            font-size: 1.5rem;
+        }
+
+        .thirdSection .container {
+            display: flex;
+            column-gap: 60px;
+            padding-top: 60px;
 
         }
+
+        .container .box1 {
+            height: 200px;
+            width: 200px;
+
+
+
+        }
+
+        .box1 img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .container .box2 {
+            height: 200px;
+            width: 2000px;
+            font-size: 1rem;
+
+        }
+
+        .box2 ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: rgb(9, 10, 77);
+
+
+        }
+
         .footer {
             display: flex;
             padding: 23px 122px;
             justify-content: space-evenly;
         }
+
         .footer ul {
             text-emphasis: none;
             text-align: center;
         }
-        .footer > div {
+
+        .footer>div {
             width: 223px;
         }
 
@@ -188,6 +231,11 @@
             text-align: center;
             color: gray;
             padding: 12px;
+        }
+
+        footer .footer-second a {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
@@ -202,7 +250,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About</a></li>
                 <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
+                
                 <li><a href="/">Contact Me</a></li>
             </ul>
         </nav>
@@ -211,15 +259,16 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My name is <span class="purple">Ayush</span>
+                Hi, My name is <span class="purple">Ayush Sharma</span>
                 <div>and I am a </div>
                 <span id="element"></span>
                 <div class="buttons">
                     <button class="btn">Download CV</button>
                 </div>
                 <div class="socials">
-                    <a href="https://github.com/ajoossharma" target="_blank"><img src="github.png" alt="" ></a>
-                    <a href="https://www.linkedin.com/in/ayush-sharma-751417249/" target="_blank"><img src="linkedin.webp" alt="" ></a>
+                    <a href="https://github.com/ajoossharma" target="_blank"><img src="github.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/ayush-sharma-751417249/" target="_blank"><img
+                            src="linkedin.webp" alt=""></a>
                 </div>
             </div>
             <div class="rightSection">
@@ -229,7 +278,7 @@
         </section>
         <hr>
         <section class="secondSection">
-            
+
             <h1>Work Experience</h1>
             <div class="box">
                 <div class="vertical">
@@ -276,38 +325,70 @@
                         reiciendis rem ab! Architecto, accusamus?
                     </div>
                 </div>
-                
 
 
             </div>
         </section>
         <hr>
-        <section class="secondSection">
-            
+        <section class="thirdSection">
             <h1>Education</h1>
-            
+            <div class="container">
+                <div class="box1">
+                    <img src="dtu.jpg" alt="" class="college">
+                </div>
+
+                <div class="box2">
+                    <h2>Delhi Technological University (Formerly DCE)</h2>
+                    <h4>BTech-Electrical Engineering</h4>
+                    <h6>2022-2026</h6>
+                    <ul>
+                        <li>Treasurer at Assets-The Finance Society of DTU</li>
+                        <li>Corporate Head at E-CELL DTU</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="thirdSection">
+            <div class="container">
+                <div class="box1">
+                    <img src="school.png" alt="" class="college">
+                </div>
+                <div class="box2">
+                    <h2>St.Columba's School, New Delhi</h2>
+                    <h4></h4>
+                    <h6>2009-2021</h6>
+                    <ul>
+                        <li>Video Editor for Vector-The Tech Society</li>
+                        <li>Played in the U-17 and U-14 Interzonal Football Tournaments</li>
+                    </ul>
+                </div>
+            </div>
+
+
         </section>
 
     </main>
     <footer>
         <div class="footer">
-            
+
             <div class="footer-second">
                 <ul>
-                  <a href="#">Back to top</a>
+                    <a href="#">Back to top</a>
 
                 </ul>
             </div>
         </div>
         <div class="footer-rights">
-            Copyright &#169; ayushportfolio.com  || All rights reserved
+            Copyright &#169; ayushportfolio.com || All rights reserved
         </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
         var typed = new Typed('#element', {
-            strings: ['Full Stack Web Developer', 'Open Source Contributor' ],
+            strings: ['Full Stack Web Developer', 'Open Source Contributor'],
             typeSpeed: 50,
         });
     </script>
